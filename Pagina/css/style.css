@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Labrada';
+}
+
+.Historia {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #ff0055;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #D31027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(353, 81%, 57%, 0.603), hsla(353, 86%, 45%, 0.301)), url(../img/imagen13.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(353, 81%, 57%, 0.603), hsla(353, 86%, 45%, 0.301)), url(../img/imagen13.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 150px;
+    color: #fff;
+}
+
+.wave {
+    position: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+.contenido-personaje {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.imagen-about-us {
+    width: 38%;
+}
+
+.Historia .contenido-textos {
+    width: 48%;
+}
+
+/* Galeria */
+
+.Amistades {
+    background: #fcdae5;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 5);
+}
+
+.imagen-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bibliografia */
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    background: #f34c81;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+
+}
+
+.card>.contenido-texto-card {
+    width: 60%;
+    color: #fff;
+}
+
+.card>.contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* Difusión */
+
+.about-Difusión {
+    background: #f0bfce;
+    padding-bottom: 50px;
+}
+
+.Difusión-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Difusión-ind {
+    width: 28%;
+    text-align: center;
+}
+
+.Difusión-ind img {
+    width: 100%;
+}
+
+.Difusión-ind h3 {
+    margin: 10px 0;
+}
+
+.Difusión-ind P {
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Footer */
+
+footer {
+    background: #b8033f;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fcdae5;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.content-foo p{
+    color: #fff;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #dba4b6;
+} 
+
+@media screen and (max-width: 900px){
+    header{
+        background-position: center;
+    }
+
+    .contenido-personaje{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido-personaje .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+    
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Bibliografia */
+
+    .card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    /*  Difusión */
+    
+    .Difusión-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Difusión-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Difusión-ind:nth-child(1), .Difusión-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .Difusión-ind img{
+        width: 90%;
+    }
+
+}
+
+@media screen and(max-width:500px) {
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    /* ABOUT US*/
+
+    .imagen-about-us{
+
+        margin-bottom: 60px;
+        width: 99px;
+    }
+
+    .contenido-personaje .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%
+    }
+
+    /* Biografia */
+
+    .card{
+
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .card img{
+    width: 90px;
+    height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contenedor-foo{
+        border-bottom: none;
+    }
+
+    .contenedor-foo p{
+        color: #f0bfce;
+        border-bottom: 1px solid #f34c81;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
